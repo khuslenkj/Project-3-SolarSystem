@@ -17,98 +17,18 @@ body {
     position: absolute;
     border: white dashed 2px;
     border-radius: 50%;
-}
-.orbit1{
-    width: 250px;
-    height: 250px;
-    animation: rotation 8.8s linear infinite;
-}
-.orbit2{
-    height: 300px;
-    width: 300px;
-    animation: rotation 22.5s linear infinite;
-}
-.orbit3{
-    width: 400px;
-    height: 400px;
-    animation: rotation 36.5s linear infinite;
-}
-.orbit4{
-    width: 500px;
-    height: 500px;
-    animation: rotation 68.7s linear infinite;
-}
-.orbit5{
-    width: 650px;
-    height: 650px;
-    animation: rotation 118.6s linear infinite;
-}
-.orbit6{
-    width: 750px;
-    height: 750px;
-    animation: rotation 294.6s linear infinite;
-}
-.orbit7{
-    width: 850px;
-    height: 850px;
-    animation: rotation 840s linear infinite;
-}
-.orbit8{
-    width: 950px;
-    height: 950px;
-    animation: rotation 1648s linear infinite;
+    width: var(--orbit-size);
+    height: var(--orbit-size);
+    animation: var(--orbit-animation);
 }
 .planet{
     position: absolute;
     z-index: 5;
-}
-.planet1{
-    height: 15px;
-    left: 117.5px;
-    top: -7.5px;
-    animation: selfrotation 5.86s linear infinite;
-}
-.planet2{
-    height: 20px;
-    left: 150px;
-    top: -10px;
-    animation: selfrotation 24.3s linear infinite;
-}
-.planet3{
-    height: 23px;
-    left: 200px;
-    top: -11.5px;
-    animation: selfrotation 1s linear infinite;
-}
-.planet4{
-    height: 17px;
-    left: 250px;
-    top: -8.5px;
-    animation: selfrotation 1.025s linear infinite;
-}
-.planet5{
-    height: 45px;
-    left: 325px;
-    top: -22.5px;
-    animation: selfrotation 0.41s linear infinite;
-}
-.planet6{
-    height: 40px;
-    left: 375px;
-    top: -20px;
-    animation: selfrotation 0.445s linear infinite;
-}
-.planet7{
-    height: 35px;
-    left: 425px;
-    top: -17.5px;
-    animation: selfrotation 0.717s linear infinite;
-}
-.planet8{
-    height: 33px;
-    left: 475px;
-    top: -16.5px;
-    animation: selfrotation 0.671s linear infinite;
+    width: var(--planet-size);
+    height: var(--planet-size);
+    left: var(--planet-left);
+    top: var(--planet-top);
+    animation: var(--planet-animation);
 }
 @keyframes selfrotation{
     from {
