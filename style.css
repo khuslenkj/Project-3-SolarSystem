@@ -30,14 +30,6 @@ body {
     top: var(--planet-top);
     animation: var(--planet-animation);
 }
-@keyframes selfrotation{
-    from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 @keyframes rotation{
     from {
     transform: rotate(0deg);
